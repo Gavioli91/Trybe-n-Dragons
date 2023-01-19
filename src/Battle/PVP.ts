@@ -7,7 +7,7 @@ class PVP extends Battle {
   constructor(
     private _playerOne: Fighter,
     private _playerTwo: Fighter,
-  ) { super(); }
+  ) { super(_playerOne); }
 
   fight(): number {
     while (this._playerOne.lifePoints !== BATTLE_FINAL
