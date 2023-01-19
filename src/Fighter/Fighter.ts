@@ -5,7 +5,7 @@ interface Fighter extends SimpleFighter {
   defense: number;
   energy?: Energy;
 
-  special?(enemy: Fighter): void,
+  special?(enemy: Fighter | SimpleFighter): void,
   levelUp(): void,
 }
 
